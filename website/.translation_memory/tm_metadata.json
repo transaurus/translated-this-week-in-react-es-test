@@ -1,0 +1,35 @@
+{
+  "locales": [
+    "es-TEST"
+  ],
+  "folder_patterns": [
+    {
+      "source": "src/pages/**/*.{md,mdx}",
+      "translation": "i18n/%locale%/docusaurus-plugin-content-pages/**/%original_file_name%",
+      "description": "Markdown/MDX pages from the src/pages directory. The double-asterisk preserves subdirectory structures."
+    },
+    {
+      "source": "blog-articles/**/*.{md,mdx}",
+      "translation": "i18n/%locale%/docusaurus-plugin-content-blog-articles/**/%original_file_name%",
+      "description": "Blog posts (Markdown/MDX) for the 'articles' blog instance. Source folder 'blog-articles' is inferred from the i18n structure. The double-asterisk preserves subdirectory structures."
+    },
+    {
+      "source": "blog-newsletter/**/*.{md,mdx}",
+      "translation": "i18n/%locale%/docusaurus-plugin-content-blog-newsletter/**/%original_file_name%",
+      "description": "Blog posts (Markdown/MDX) for the 'newsletter' blog instance. Source folder 'blog-newsletter' is inferred from the i18n structure. The double-asterisk preserves subdirectory structures."
+    },
+    {
+      "source": "i18n/en/docusaurus-theme-classic/*.json",
+      "translation": "i18n/%locale%/docusaurus-theme-classic/%original_file_name%",
+      "description": "Theme translation JSON files from the 'docusaurus-theme-classic' plugin. This pattern assumes 'en' (English) is the default locale and its JSON files are stored in 'i18n/en/docusaurus-theme-classic/'. These are copied to the target locale's folder for translation."
+    },
+    {
+      "source": "i18n/en/code.json",
+      "translation": "i18n/%locale%/code.json",
+      "description": "Site-level translation JSON file (code.json). This pattern assumes 'en' (English) is the default locale and its 'code.json' is stored in 'i18n/en/'. This file is copied to the target locale's folder for translation."
+    }
+  ],
+  "docusaurus_root_dir_relative_to_repo": "website",
+  "docusaurus_config_filepath_relative_to_repo": "website/docusaurus.config.ts",
+  "source_language": "en"
+}
